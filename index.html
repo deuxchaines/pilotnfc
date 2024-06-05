@@ -9,10 +9,11 @@
         Your browser does not support the video tag.
     </video>
     <script>
-        var video = document.getElementById('myVideo');
-        video.onended = function() {
+        // Add event listener for video ended
+        document.getElementById('myVideo').addEventListener('ended', function() {
+            // Redirect to the PDF file
             window.location.href = "testpdf.pdf";
-        };
+        });
     </script>
 </body>
 </html>
